@@ -90,8 +90,8 @@ public:
 			delete[] this->title;
 		}
 
-		this->title = new char[strlen(title) + 1];
-		strcpy(this->title, title);
+		this->title = new char[strlen(title) + 1]; // allocate
+		strcpy(this->title, title); // deep copy
 	}
 };
 
